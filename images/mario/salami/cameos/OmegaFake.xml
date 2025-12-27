@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="OmegaFake.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="omega_gif0000" x="0" y="0" width="26" height="32"/>
+	<SubTexture name="omega_gif0001" x="0" y="0" width="26" height="32"/>
+	<SubTexture name="omega_gif0002" x="0" y="0" width="26" height="32"/>
+	<SubTexture name="omega_gif0003" x="0" y="37" width="26" height="32"/>
+	<SubTexture name="omega_gif0004" x="0" y="37" width="26" height="32"/>
+	<SubTexture name="omega_gif0005" x="0" y="37" width="26" height="32"/>
+	<SubTexture name="omega_gif0006" x="0" y="74" width="26" height="32"/>
+	<SubTexture name="omega_gif0007" x="0" y="74" width="26" height="32"/>
+	<SubTexture name="omega_gif0008" x="0" y="74" width="26" height="32"/>
+</TextureAtlas>

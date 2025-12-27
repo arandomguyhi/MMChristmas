@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="GB.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="fat_gif0000" x="0" y="0" width="18" height="36"/>
+	<SubTexture name="fat_gif0001" x="0" y="0" width="18" height="36"/>
+	<SubTexture name="fat_gif0002" x="0" y="0" width="18" height="36"/>
+	<SubTexture name="fat_gif0003" x="23" y="0" width="18" height="36"/>
+	<SubTexture name="fat_gif0004" x="23" y="0" width="18" height="36"/>
+	<SubTexture name="fat_gif0005" x="23" y="0" width="18" height="36"/>
+	<SubTexture name="fat_gif0006" x="46" y="0" width="18" height="36"/>
+	<SubTexture name="fat_gif0007" x="46" y="0" width="18" height="36"/>
+	<SubTexture name="fat_gif0008" x="46" y="0" width="18" height="36"/>
+</TextureAtlas>

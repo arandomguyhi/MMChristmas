@@ -1,0 +1,98 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"cameraOffset": [
+				-30,
+				0
+			],
+			"offsets": [
+				146,
+				42
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "MXLeft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"cameraOffset": [
+				0,
+				30
+			],
+			"offsets": [
+				14,
+				-76
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "MXDown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"cameraOffset": [
+				0,
+				-30
+			],
+			"offsets": [
+				-24,
+				204
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "MXUp",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"cameraOffset": [
+				30,
+				0
+			],
+			"offsets": [
+				6,
+				19
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "MXRight",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"cameraOffset": [
+				0,
+				0
+			],
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 44,
+			"name": "MXIdle",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Wahoo_Hoo_Hoo_MX",
+	"position": [
+		-360,
+		20
+	],
+	"healthicon": "mxghost",
+	"flip_x": false,
+	"healthbar_colors": [
+		120,
+		0,
+		60
+	],
+	"camera_position": [
+		-690,
+		-170
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

@@ -1,0 +1,641 @@
+{
+	"song": {
+		"events": [
+			[
+				21826.0869565217,
+				[
+					[
+						"Camera Follow Pos",
+						"140",
+						"20"
+					]
+				]
+			],
+			[
+				22956.5217391304,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					],
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					],
+					[
+						"Change Scroll Speed",
+						"1.13",
+						".3"
+					]
+				]
+			],
+			[
+				31304.347826087,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				39130.4347826087,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				39652.1739130435,
+				[
+					[
+						"Triggers Universal",
+						"cameos salami",
+						""
+					],
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					],
+					[
+						"Change Scroll Speed",
+						"1.1",
+						".3"
+					]
+				]
+			],
+			[
+				42521.7391304348,
+				[
+					[
+						"Camera Follow Pos",
+						"140",
+						"20"
+					]
+				]
+			],
+			[
+				43826.0869565217,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					],
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				46434.7826086956,
+				[
+					[
+						"Camera Follow Pos",
+						"140",
+						"20"
+					]
+				]
+			],
+			[
+				48000,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					],
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				50086.9565217391,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				50869.5652173913,
+				[
+					[
+						"Camera Follow Pos",
+						"140",
+						"20"
+					]
+				]
+			],
+			[
+				52173.9130434782,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					],
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				54260.8695652174,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				54782.6086956522,
+				[
+					[
+						"Camera Follow Pos",
+						"140",
+						"20"
+					]
+				]
+			],
+			[
+				56086.9565217391,
+				[
+					[
+						"Triggers Universal",
+						"cameos salami",
+						""
+					]
+				]
+			],
+			[
+				56347.8260869565,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					],
+					[
+						"Change Scroll Speed",
+						"1.13",
+						".3"
+					],
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				64695.652173913,
+				[
+					[
+						"Triggers Universal",
+						"cameos salami",
+						""
+					]
+				]
+			],
+			[
+				73043.4782608696,
+				[
+					[
+						"Triggers Universal",
+						"gb flash",
+						""
+					],
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					],
+					[
+						"Change Scroll Speed",
+						"1",
+						".3"
+					],
+					[
+						"Camera Follow Pos",
+						"140",
+						"20"
+					]
+				]
+			],
+			[
+				76695.652173913,
+				[
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				80347.8260869565,
+				[
+					[
+						"Camera Follow Pos",
+						"140",
+						"20"
+					]
+				]
+			],
+			[
+				82869.5652173913,
+				[
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				85565.2173913044,
+				[
+					[
+						"Camera Follow Pos",
+						"140",
+						"20"
+					]
+				]
+			],
+			[
+				89739.1304347826,
+				[
+					[
+						"Triggers Universal",
+						"cameos salami",
+						""
+					],
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				89739.1304347826,
+				[
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					]
+				]
+			],
+			[
+				91826.0869565218,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				93913.0434782609,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				96000,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				98086.9565217392,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					],
+					[
+						"Camera Follow Pos",
+						"140",
+						"20"
+					]
+				]
+			],
+			[
+				100173.913043478,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				102260.869565217,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				104347.826086957,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				106434.782608696,
+				[
+					[
+						"Triggers Universal",
+						"cameos salami",
+						""
+					],
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					],
+					[
+						"Change Scroll Speed",
+						"1.13",
+						".3"
+					]
+				]
+			],
+			[
+				123130.434782609,
+				[
+					[
+						"Triggers Universal",
+						"cameos salami",
+						""
+					],
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				125217.391304348,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				127304.347826087,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				129391.304347826,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				131478.260869565,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				133565.217391304,
+				[
+					[
+						"Triggers Universal",
+						"cameos salami",
+						""
+					]
+				]
+			],
+			[
+				133565.217391304,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				135652.173913044,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				137739.130434783,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				139826.086956522,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					],
+					[
+						"Camera Follow Pos",
+						"140",
+						"20"
+					]
+				]
+			],
+			[
+				141913.043478261,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				144000,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				146086.956521739,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				148173.913043478,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				150260.869565218,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				152347.826086957,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				154434.782608696,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			],
+			[
+				156521.739130435,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					],
+					[
+						"Camera Follow Pos",
+						"",
+						""
+					],
+					[
+						"Change Scroll Speed",
+						"1",
+						".3"
+					]
+				]
+			],
+			[
+				158608.695652174,
+				[
+					[
+						"Triggers Universal",
+						"cameos salami",
+						""
+					]
+				]
+			],
+			[
+				173739.130434783,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					],
+					[
+						"Camera Follow Pos",
+						"140",
+						"20"
+					]
+				]
+			],
+			[
+				176347.826086957,
+				[
+					[
+						"Triggers Universal",
+						"bg flash",
+						""
+					]
+				]
+			]
+		]
+	}
+}

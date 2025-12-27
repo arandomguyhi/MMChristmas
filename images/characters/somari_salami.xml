@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="somari_salami.png">
+<SubTexture name="idle0000" x="0" y="0" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="idle0001" x="42" y="0" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="idle0002" x="0" y="41" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="idle0003" x="42" y="41" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="idle0004" x="84" y="0" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="idle0005" x="84" y="0" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="left0000" x="84" y="41" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="left0001" x="0" y="82" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="left0002" x="42" y="82" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="left0003" x="84" y="82" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="right0000" x="126" y="41" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="right0001" x="126" y="82" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="right0002" x="0" y="123" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="up0000" x="84" y="123" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="up0001" x="126" y="123" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="up0002" x="168" y="0" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="down0000" x="168" y="82" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="down0001" x="168" y="123" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="down0002" x="0" y="164" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="down0003" x="42" y="164" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="down0004" x="84" y="164" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="miss left0000" x="126" y="164" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="miss left0001" x="168" y="164" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="miss right0000" x="210" y="0" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="miss right0001" x="210" y="41" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="miss up0000" x="210" y="82" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="miss up0001" x="210" y="123" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="miss down0000" x="210" y="164" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="miss down0001" x="0" y="205" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+<SubTexture name="hi tommy0000" x="42" y="205" width="42" height="41" frameX="0" frameY="0" frameWidth="42" frameHeight="41" />
+</TextureAtlas>

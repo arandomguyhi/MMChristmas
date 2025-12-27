@@ -1,0 +1,23 @@
+{
+	"songs": [
+		["Wahoo Hoo Hoo", "bf", [80, 165, 235]],
+		["Salami", "bf", [194, 160, 11]]
+	],
+
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"weekBackground": "stage",
+
+	"storyName": "",
+	"weekBefore": "",
+	"weekName": "",
+	"startUnlocked": true,
+	"difficulties": "Normal",
+
+	"hideStoryMode": true,
+	"hideFreeplay": false,
+	"weeklogo": ""
+}

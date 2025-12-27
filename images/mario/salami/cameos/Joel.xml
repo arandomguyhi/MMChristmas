@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Joel.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="joel_gif0000" x="0" y="0" width="20" height="39"/>
+	<SubTexture name="joel_gif0001" x="0" y="0" width="20" height="39"/>
+	<SubTexture name="joel_gif0002" x="0" y="0" width="20" height="39"/>
+	<SubTexture name="joel_gif0003" x="25" y="0" width="20" height="39"/>
+	<SubTexture name="joel_gif0004" x="25" y="0" width="20" height="39"/>
+	<SubTexture name="joel_gif0005" x="25" y="0" width="20" height="39"/>
+	<SubTexture name="joel_gif0006" x="0" y="44" width="20" height="39"/>
+	<SubTexture name="joel_gif0007" x="0" y="44" width="20" height="39"/>
+	<SubTexture name="joel_gif0008" x="0" y="44" width="20" height="39"/>
+</TextureAtlas>

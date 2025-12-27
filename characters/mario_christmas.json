@@ -1,0 +1,102 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				75,
+				14
+			],
+			"cameraOffset": [
+				-30,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "MarioLeft"
+		},
+		{
+			"offsets": [
+				17,
+				-28
+			],
+			"cameraOffset": [
+				0,
+				30
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "MarioDown"
+		},
+		{
+			"offsets": [
+				-12,
+				94
+			],
+			"cameraOffset": [
+				0,
+				-30
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "MarioUp"
+		},
+		{
+			"offsets": [
+				-11,
+				-37
+			],
+			"cameraOffset": [
+				30,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "MarioRight"
+		},
+		{
+			"loop": false,
+			"cameraOffset": [
+				0,
+				0
+			],
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 44,
+			"name": "MarioIdle",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Wahoo_Hoo_Hoo_Mario",
+	"position": [
+		0,
+		240
+	],
+	"dance_every": 2,
+	"gameover_intial_sound": "christmas_death",
+	"scalableOffsets": false,
+	"gameover_confirm_sound": "confirm_death_christmas",
+	"healthicon": "marioangy",
+	"gameover_character": "mario_christmas-dead",
+	"vslice_sustains": false,
+	"flip_x": true,
+	"healthbar_colors": [153, 0, 51],
+	"camera_position": [
+		360,
+		110
+	],
+	"gameover_loop_sound": "game_over_christmas",
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

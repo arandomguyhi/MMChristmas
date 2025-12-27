@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Mr V.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bald_gif0000" x="0" y="0" width="19" height="24"/>
+	<SubTexture name="bald_gif0001" x="0" y="0" width="19" height="24"/>
+	<SubTexture name="bald_gif0002" x="0" y="0" width="19" height="24"/>
+	<SubTexture name="bald_gif0003" x="24" y="0" width="19" height="24"/>
+	<SubTexture name="bald_gif0004" x="24" y="0" width="19" height="24"/>
+	<SubTexture name="bald_gif0005" x="24" y="0" width="19" height="24"/>
+	<SubTexture name="bald_gif0006" x="0" y="29" width="19" height="24"/>
+	<SubTexture name="bald_gif0007" x="0" y="29" width="19" height="24"/>
+	<SubTexture name="bald_gif0008" x="0" y="29" width="19" height="24"/>
+	<SubTexture name="bald_gif0009" x="24" y="29" width="19" height="24"/>
+	<SubTexture name="bald_gif0010" x="24" y="29" width="19" height="24"/>
+	<SubTexture name="bald_gif0011" x="24" y="29" width="19" height="24"/>
+	<SubTexture name="bald_gif0012" x="0" y="58" width="19" height="24"/>
+	<SubTexture name="bald_gif0013" x="0" y="58" width="19" height="24"/>
+	<SubTexture name="bald_gif0014" x="0" y="58" width="19" height="24"/>
+</TextureAtlas>
