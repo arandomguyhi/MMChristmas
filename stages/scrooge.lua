@@ -84,6 +84,9 @@ function onCreatePost()
         makeLuaSprite('snow') setSpriteShader('snow', 'snowfall')
         setShaderFloat('snow', 'intensity', 500)
         runHaxeCode("camGame.setFilters([new ShaderFilter(game.getLuaObject('snow').shader)]);")
+    else
+        setProperty('gf.color', getColorFromHex('000000'))
+        setProperty('gf.alpha', 0.000001)
     end
 
     iconColore = getIconColor('dad')
@@ -97,6 +100,8 @@ function onCreatePost()
         setProperty('mx.x', getProperty('mx.x') + 1000)
         setProperty('dad.alpha', 0)
     end
+
+    setProperty('iconP2.alpha', 0)
 end
 
 local fuck, lol = 0, 0
@@ -185,6 +190,7 @@ function onStepHit()
             setProperty('isCameraOnForcedPos', false) end
         end
         startTween('hiPeach', 'dad', {y = getProperty('dad.y') - 1100, alpha = 1}, 1, {ease = 'quartOut'})
+        doTweenAlpha('hiIcon', 'iconP2', 1, 0.5, 'quadInOut')
     end
 
     if curStep == 631 then
@@ -207,12 +213,18 @@ function onStepHit()
             doTweenAlpha('unblackie', 'black', 0, 1)
         end
 
-        runHaxeCode([[
-            FlxTween.num(0, 1, 9, {ease: FlxEase.quadInOut, onUpdate: (fuck)->{ callOnLuas('setShaderFloat', ['gf', 'u_alpha', fuck.value]); }});
-            FlxTween.num(-50, 0, 9, {ease: FlxEase.quadInOut, onUpdate: (fuck)->{ callOnLuas('setShaderFloat', ['gf', 'u_saturation', fuck.value]); }});
-            FlxTween.num(-50, 0, 9, {ease: FlxEase.quadInOut, onUpdate: (fuck)->{ callOnLuas('setShaderFloat', ['gf', 'u_brightness', fuck.value]); }});
-        ]])
+        if shadersEnabled then
+            runHaxeCode([[
+                FlxTween.num(0, 1, 9, {ease: FlxEase.quadInOut, onUpdate: (fuck)->{ callOnLuas('setShaderFloat', ['gf', 'u_alpha', fuck.value]); }});
+                FlxTween.num(-50, 0, 9, {ease: FlxEase.quadInOut, onUpdate: (fuck)->{ callOnLuas('setShaderFloat', ['gf', 'u_saturation', fuck.value]); }});
+                FlxTween.num(-50, 0, 9, {ease: FlxEase.quadInOut, onUpdate: (fuck)->{ callOnLuas('setShaderFloat', ['gf', 'u_brightness', fuck.value]); }});
+            ]])
+        end
 
+        for _,cu in pairs({'gf', 'iconP2'}) do
+            doTweenColor('cu'..cu, cu, 'ffffff', 9, 'quadOut')
+            doTweenAlpha('cuA'..cu, cu, 1, 9, 'quadInOut')
+        end
         startTween('IHYL', 'gf', {y = getProperty('gf.y') - 800}, 9, {ease = 'quadOut'})
     end
 end
@@ -234,7 +246,7 @@ function onEvent(eventName, value1, value2)
                 iconColore = getIconColor('dad')
             elseif value2 == 'luigi' then
                 setVar('opponentStrumOwner', 'gf')
-                if not lol then setProperty('iconP2.shader', getProperty('gf.shader')) end
+                if not lol then setProperty('iconP2.color', getProperty('gf.color')) setProperty('iconP2.alpha', 0.00001) end
                 lol = true
                 iconColore = getIconColor('gf')
             elseif value2 == 'mx' then

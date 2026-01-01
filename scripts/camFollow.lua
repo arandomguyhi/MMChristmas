@@ -1,4 +1,4 @@
-setVar('camMoveOffset', 15)
+setVar('camDisplacement', 15)
 setVar('camFollowChars', true)
 
 local function getCamPos(char)
@@ -23,13 +23,13 @@ function onUpdate()
 
     if getVar('camFollowChars') then
         if getProperty(getVar('lastFocus')..'.animation.curAnim.name') == 'singLEFT' then
-            callMethod('camFollow.setPosition', {getCamPos(getVar('lastFocus')).x - getVar('camMoveOffset'), getCamPos(getVar('lastFocus')).y}) angle = -getVar('camAngleOffset')
+            callMethod('camFollow.setPosition', {getCamPos(getVar('lastFocus')).x - getVar('camDisplacement'), getCamPos(getVar('lastFocus')).y}) angle = -getVar('camAngleOffset')
         elseif getProperty(getVar('lastFocus')..'.animation.curAnim.name') == 'singDOWN' then
-            callMethod('camFollow.setPosition', {getCamPos(getVar('lastFocus')).x, getCamPos(getVar('lastFocus')).y + getVar('camMoveOffset')})
+            callMethod('camFollow.setPosition', {getCamPos(getVar('lastFocus')).x, getCamPos(getVar('lastFocus')).y + getVar('camDisplacement')})
         elseif getProperty(getVar('lastFocus')..'.animation.curAnim.name') == 'singUP' then
-            callMethod('camFollow.setPosition', {getCamPos(getVar('lastFocus')).x, getCamPos(getVar('lastFocus')).y - getVar('camMoveOffset')})
+            callMethod('camFollow.setPosition', {getCamPos(getVar('lastFocus')).x, getCamPos(getVar('lastFocus')).y - getVar('camDisplacement')})
         elseif getProperty(getVar('lastFocus')..'.animation.curAnim.name') == 'singRIGHT' then
-            callMethod('camFollow.setPosition', {getCamPos(getVar('lastFocus')).x + getVar('camMoveOffset'), getCamPos(getVar('lastFocus')).y}) angle = getVar('camAngleOffset')
+            callMethod('camFollow.setPosition', {getCamPos(getVar('lastFocus')).x + getVar('camDisplacement'), getCamPos(getVar('lastFocus')).y}) angle = getVar('camAngleOffset')
         else
             callMethod('camFollow.setPosition', {getCamPos(getVar('lastFocus')).x, getCamPos(getVar('lastFocus')).y}) angle = 0
         end

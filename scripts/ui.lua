@@ -2,7 +2,7 @@ luaDebugMode = true
 
 function onCreate()
     setPropertyFromClass('states.PlayState', 'SONG.disableNoteRGB', true)
-    if songName:find('Salami') then return end -- not using exceptions atp
+    if songName:find('salami') then return end -- not using exceptions atp
 
     setPropertyFromClass('states.PlayState', 'SONG.arrowSkin', 'Mario_NOTE_assets')
     setPropertyFromClass('states.PlayState', 'SONG.splashSkin', 'noteSplashes')
@@ -36,7 +36,7 @@ function onCountdownStarted()
     setProperty('comboGroup.visible', false)
     setProperty('botplayTxt.visible', false)
 
-    if songName:find('Salami') then return end
+    if songName:find('salami') then return end
 
     makeLuaSprite('luigi_icon', 'modstuff/luigi/luigi')
     setGraphicSize('luigi_icon', 90)
@@ -63,7 +63,7 @@ end
 local rating_dropped = false
 
 function onPopUpScore(rate)
-    if songName:find('Salami') then return end
+    if songName:find('salami') then return end
 
     playAnim('ratings', rate)
 
@@ -90,7 +90,7 @@ function move_box_back()
 end
 
 function onUpdate(elapsed)
-    if songName:find('Salami') then return end
+    if songName:find('salami') then return end
 
     setProperty('luigi_icon.visible', botPlay)
 
