@@ -188,6 +188,36 @@ function onCreatePost()
     makeLuaSprite('cu2',nil,screenWidth-115,0) makeGraphic('cu2', 115, screenHeight, '000000')
     setObjectCamera('cu2', 'camOther')
     addLuaSprite('cu2')
+    
+if buildTarget ~= 'windows' then
+--android shit
+makeAnimatedLuaSprite('leftButton', 'androidPad', 0, 610)
+addAnimationByPrefix('leftButton', 'idle', 'left0', 24, false)
+addAnimationByPrefix('leftButton', 'press', 'left2', 24, false)
+playAnim('leftButton', 'idle', true)
+setProperty('leftButton.color', getColorFromHex('6b24f9'))
+scaleObject('leftButton', 0.85, 0.85)
+setObjectCamera('leftButton', 'other')
+addLuaSprite('leftButton')
+
+makeAnimatedLuaSprite('rightButton', 'androidPad', 110, 610)
+addAnimationByPrefix('rightButton', 'idle', 'right0', 24, false)
+addAnimationByPrefix('rightButton', 'press', 'right2', 24, false)
+playAnim('rightButton', 'idle', true)
+setProperty('rightButton.color', getColorFromHex('6b24f9'))
+scaleObject('rightButton', 0.85, 0.85)
+setObjectCamera('rightButton', 'other')
+addLuaSprite('rightButton')
+
+makeAnimatedLuaSprite('aButton', 'androidPad', 1170, 610)
+addAnimationByPrefix('aButton', 'idle', 'a0', 24, false)
+addAnimationByPrefix('aButton', 'press', 'a2', 24, false)
+playAnim('aButton', 'idle')
+setProperty('aButton.color', getColorFromHex('6b24f9'))
+setObjectCamera('aButton', 'other')
+addLuaSprite('aButton')
+scaleObject('aButton', 0.85, 0.85)
+end
 
     change_char_selection_text()
 end
@@ -212,10 +242,10 @@ function onUpdate(elapsed)
     setTextString('miss_amt', extrazero..getProperty('songMisses'))
 
     if selecting_char then
-        if keyJustPressed('LEFT') then selected_character = 'somari' end
-        if keyJustPressed('RIGHT') then selected_character = 'granddad' end
-        if keyJustPressed('RIGHT') or keyJustPressed('LEFT') then change_char_selection_text() end
-        if keyboardJustPressed('ENTER') and selected_chararacter ~= '' then start_song()
+        if buildTarget == 'windows' and keyJustPressed('LEFT') or getMouseX('camOther') > getProperty('leftButton.x') and getMouseY('camOther') > getProperty('leftButton.y') and getMouseX('camOther') < getProperty('leftButton.x') + getProperty('leftButton.width') and getMouseY('camOther') < getProperty('leftButton.y') + getProperty('leftButton.height') and mouseReleased() then selected_character = 'somari' end
+        if buildTarget == 'windows' and keyJustPressed('RIGHT') or getMouseX('camOther') > getProperty('rightButton.x') and getMouseY('camOther') > getProperty('rightButton.y') and getMouseX('camOther') < getProperty('rightButton.x') + getProperty('rightButton.width') and getMouseY('camOther') < getProperty('rightButton.y') + getProperty('rightButton.height') and mouseReleased() then selected_character = 'granddad' end
+        if buildTarget == 'windows' and keyJustPressed('RIGHT') or getMouseX('camOther') > getProperty('rightButton.x') and getMouseY('camOther') > getProperty('rightButton.y') and getMouseX('camOther') < getProperty('rightButton.x') + getProperty('rightButton.width') and getMouseY('camOther') < getProperty('rightButton.y') + getProperty('rightButton.height') and mouseReleased() or keyJustPressed('LEFT') or getMouseX('camOther') > getProperty('leftButton.x') and getMouseY('camOther') > getProperty('leftButton.y') and getMouseX('camOther') < getProperty('leftButton.x') + getProperty('leftButton.width') and getMouseY('camOther') < getProperty('leftButton.y') + getProperty('leftButton.height') and mouseReleased() then change_char_selection_text() end
+        if buildTarget == 'windows' and keyboardJustPressed('ENTER') or getMouseX('camOther') > getProperty('aButton.x') and getMouseY('camOther') > getProperty('aButton.y') and getMouseX('camOther') < getProperty('aButton.x') + getProperty('aButton.width') and getMouseY('camOther') < getProperty('aButton.y') + getProperty('aButton.height') and mouseReleased() and selected_chararacter ~= '' then start_song()
         elseif selected_character == '' then onMoveCamera('') end
     end
 
@@ -276,7 +306,7 @@ function start_song()
     for _,item in pairs({'miss_icon', 'miss_amt', 'scoreText'}) do
         setProperty(item..'.visible', true)
     end
-    for _,item in pairs({'select_character_text', 'character_text'}) do
+    for _,item in pairs({'select_character_text', 'character_text', 'leftButton', 'rightButton', 'aButton'}) do
         setProperty(item..'.visible', false)
     end
 
