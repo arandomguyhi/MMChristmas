@@ -1,5 +1,8 @@
+-- um dia eu deixo isso com uma cara digna
 setVar('opponentStrumOwner', 'dad')
 setVar('playerStrumOwner', 'boyfriend')
+setVar('allowOwner', true)
+if not getVar('allowOwner') then return end
 
 function onUpdatePost()
     for i = 0, getProperty('notes.length')-1 do

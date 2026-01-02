@@ -21,6 +21,7 @@ local function bound(v,min,max)
 end
 
 setProperty('skipCountdown', true)
+setVar('allowOwner', false)
 
 function onCreate()
     setPropertyFromClass('states.PlayState', 'SONG.arrowSkin', 'Salami_Noteskin')
@@ -188,11 +189,6 @@ function onCreatePost()
     setObjectCamera('cu2', 'camOther')
     addLuaSprite('cu2')
 
-    -- ok fuck it
-    createInstance('grandad', 'objects.Character', {getProperty('boyfriend.x'), getProperty('boyfriend.y'), boyfriendName, true})
-    setProperty('grandad.visible', false)
-    addInstance('grandad')
-
     change_char_selection_text()
 end
 
@@ -271,12 +267,6 @@ function onUpdate(elapsed)
     elseif bgFlash == 7 then
         setProperty('skyfade.color', 0xE3E4FF)
     end
-
-    if somariPlays then
-        for i = 0, getProperty('notes.length')-1 do
-            setPropertyFromGroup('notes', i, 'noAnimation', true)
-        end
-    end
 end
 
 function start_song()
@@ -298,7 +288,6 @@ function start_song()
                 setProperty('opponentStrums.members['..i..'].x', _G['defaultPlayerStrumX'..i])
                 setProperty('playerStrums.members['..i..'].x', _G['defaultOpponentStrumX'..i])
             end
-            setProperty('boyfriend.visible', false) setProperty('grandad.visible', true)
         end end
     end
 end
@@ -306,6 +295,12 @@ end
 function onUpdatePost()
     setTextString('scoreText', formatMario(getProperty('songScore'), 6))
     setProperty('health', 2)
+
+    for i = 0, getProperty('notes.length')-1 do
+        if getProperty('notes.members['..i..'].isSustainNote') or somariPlays then
+            setProperty('notes.members['..i..'].noAnimation', true)
+        end
+    end
 end
 
 function formatMario(num, size)
@@ -356,8 +351,7 @@ end
 
 function onSpawnNote(id, noteData, noteType, isSustainNote)
     if not somariPlays then return end
-
-    -- setting noAnimation here doesn't work grrrrrr
+    setPropertyFromGroup('notes', id, 'noAnimation', true)
     if getPropertyFromGroup('notes', id, 'mustPress') then
         setPropertyFromGroup('notes', id, 'mustPress', false)
     else
@@ -366,28 +360,24 @@ function onSpawnNote(id, noteData, noteType, isSustainNote)
 end
 
 function opponentNoteHit(id,data,type,sus)
+    if sus then setProperty('dad.holdTimer', 0) end
     if not somariPlays then return end
-    playAnim('grandad', getProperty('singAnimations')[data+1], true)
-    setProperty('grandad.holdTimer', 0)
+    playAnim('boyfriend', getProperty('singAnimations')[data+1], true)
+    setProperty('boyfriend.holdTimer', 0)
 end
 
 function goodNoteHit(id,data,type,sus)
+    if sus then setProperty('boyfriend.holdTimer', 0) end
     if not somariPlays then return end
     playAnim('dad', getProperty('singAnimations')[data+1], true)
     setProperty('dad.holdTimer', 0)
 end
 
 function noteMiss(id,data,type,sus)
+    playAnim('boyfriend', 'idle')
     if not somariPlays then return end
     playAnim('dad', getProperty('singAnimations')[data+1]..'miss', true)
     setProperty('dad.holdTimer', 0)
-end
-
-function onBeatHit() -- ai que odio
-    local anim = getProperty('grandad.animation.curAnim.name')
-    if curBeat % 2 == 0 and not anim:find('sing') or (anim:find('sing') and getProperty('grandad.animation.curAnim.finished')) then
-        playAnim('grandad', 'idle', true)
-    end
 end
 
 local seenGB = false
